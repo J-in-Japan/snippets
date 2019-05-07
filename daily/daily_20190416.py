@@ -24,7 +24,7 @@ answer = staircase(4, {1, 2})
 #answerb = staircaseb(4)
 
 print(answer)
-print(answerb)
+#print(answerb)
 
 ###
 #N = 1: [1] = 1

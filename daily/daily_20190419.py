@@ -36,5 +36,5 @@ if __name__ == "__main__":
     node = Node('root', Node('left', Node('left.left')), Node('right')) 
     ser = node.serialize()
     print(ser)
-    node2 = deserialize(ser)
+    node2 = Node.deserialize(ser)
     #assert deserialize(serialize(node)).left.left.val == 'left.left'
