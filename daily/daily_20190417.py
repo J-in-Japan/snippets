@@ -1,3 +1,5 @@
+# determine if a list of elements can be used to form a given sum
+
 in_s = {10,15,3,7}
 in_k = 17
 

@@ -1,3 +1,5 @@
+# different ways to climb a staircase
+
 def staircase(n, X):
     if n < 0:
         return 0

@@ -1,3 +1,8 @@
+# a more efficient approach to the scheduling rooms required problem
+# put all the start and end times into an array and sort them
+# +1 room for each start and -1 for each end
+# max reached is required number of rooms
+
 classess = [ [13, 15], [11, 13], [4, 7], [1, 5], [3, 6] ]
 
 # construct a action list:
