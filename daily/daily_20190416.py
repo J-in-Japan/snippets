@@ -1,16 +1,17 @@
 # different ways to climb a staircase
-
-def staircase(n, X):
+sum = 0
+def staircase(n: int, X: set) -> int:
     if n < 0:
         return 0
     elif n == 0:
         return(1)
     else:
+        sum = 0
         for x in X:
             sum += staircase(n-x, X)
         return sum
 
-def staircaseb(n):
+def staircaseb(n: int) -> int:
     a, b = 1, 2
     #b = 2
     for _ in range(n-1):
