@@ -37,14 +37,14 @@ shortest_path_matrix = [
     [max_possible_answer, max_possible_answer],
     [max_possible_answer, max_possible_answer],
 ]
-shortest_path_matrix[start] = 0
-for i in range(len(board)):
-    for j in range(len(board[0])):
-        if board[i][j] == 1:
-            shortest_path_matrix[i][j] = 99
+#shortest_path_matrix = [] # start
+#for i in range(len(board)):
+#    for j in range(len(board[0])):
+#        if board[i][j] == 1:
+#            shortest_path_matrix[i][j] = 99
 
-def get_adjacent_tiles(cur_x: int, cur_y: int, max_x: int, max_y: int):
-    adj = []
+#def get_adjacent_tiles(cur_x: int, cur_y: int, max_x: int, max_y: int):
+#    adj = []
     # above
     #if 
 
