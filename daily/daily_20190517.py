@@ -29,7 +29,10 @@ def steps_to_convert(a: str, b: str) -> int:
 # dynamic programming mehtod
 # maintain a table of calculated sub-results
 
-def editDistDP(str1, str2, m, n): 
+def editDistDP(str1, str2): 
+    m = len(str1)
+    n = len(str2)
+    
     # Create a table to store results of subproblems 
     dp = [[0 for x in range(n+1)] for x in range(m+1)] 
   
@@ -57,12 +60,14 @@ def editDistDP(str1, str2, m, n):
             else: 
                 dp[i][j] = 1 + min(dp[i][j-1],        # Insert 
                                    dp[i-1][j],        # Remove 
-                                   dp[i-1][j-1])    # Replace 
+                                   dp[i-1][j-1])      # Replace 
   
     return dp[m][n] 
   
 # Driver program 
 str1 = "sunday"
 str2 = "saturday"
-  
-print(editDistDP(str1, str2, len(str1), len(str2))) 
+
+answer = editDistDP(str1, str2)
+
+print(answer)
