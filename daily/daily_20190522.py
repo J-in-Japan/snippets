@@ -22,7 +22,7 @@ class bs_tree:
             if cur_node.right:
                 if cur_node.right.val < max:
                     cur_node = cur_node.right
-    # would be good practice to implement insert (and search)
+    # would be good practice to implement insert (and search) DONE!
     def insert(root, node):
         if root is None:
             root = node
@@ -44,6 +44,7 @@ def inorder(root):
         inorder(root.left) 
         print(root.val) 
         inorder(root.right) 
+# Reverse order binary tree traversal
 def revorder(root):
     if root:
         revorder(root.right)
@@ -105,6 +106,8 @@ def quick_max2(root):
     if root:
         quick_max2(root.right)
         max_vals.append(root.val)
+        if len(max_vals) >= 2:
+            return
         quick_max2(root.left)
 
 print(max_vals)
